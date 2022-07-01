@@ -4,10 +4,10 @@ import Courses from "./Courses";
 
 const Skils = () => {
     return (
-        <div>
+        <section id="skills">
             <TechSkils />
             <Courses />
-        </div>
+        </section>
     );
 };
 

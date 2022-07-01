@@ -13,9 +13,7 @@ const Project = () => {
                 </ul>
                 <div>+</div>
             </div>
-            <a href="https://www.figma.com/file/sWHVKTWYlqQC63R3wQg1Y2/Portifolio?node-id=9%3A96">
-                Ir ao site
-            </a>
+            <a href="/">Ir ao site</a>
         </div>
     );
 };

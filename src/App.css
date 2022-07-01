@@ -1,0 +1,38 @@
+/*Reset*/
+* {
+    box-sizing: border-box;
+  }
+
+  h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Variáveis */
+
+body {
+    --light: #F3F1F7;
+    --darkText: #260660;
+    --darkGradient: linear-gradient(180deg, rgba(17, 11, 29, 0.8) 15.1%, #4D1BAB 100%);
+}
+
+/* Estilos globais */
+body{
+    height: 100vh;
+    bottom: 0;
+}
+
+.bgDark {
+    background: var(--darkGradient);
+    height: 90vh;
+    width: 100vh;
+}
