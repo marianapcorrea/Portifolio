@@ -1,0 +1,23 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer {
+    background-color: var(--light);
+    height: 90px;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    justify-content: center;
+    z-index: 200;
+}
+
+.footer p {
+    color: var(--darkText);
+
+}
+
