@@ -1,0 +1,43 @@
+.homeContent{
+position: relative;
+display: flex;
+}
+
+.buttonContainer {
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    bottom: 300px;
+    justify-content: flex-end;
+
+}
+
+.button {
+    margin-right:15rem;
+    padding: 20px;
+    border-radius: 15px;
+    background:  var(--light);;
+    border: 1px solid var(--darkText);
+    color: var(--darkText);
+    font-size:1rem;
+}
+
+.button:active{
+padding:18px;
+box-shadow: inset 0px 0px 19px 5px #733FDB;
+}
+
+.button:hover{
+box-shadow: inset 0px 0px 19px 5px #733FDB;
+}
+
+
+@media (max-width: 850px) {
+    .buttonContainer {
+    justify-content: center;
+    }
+
+    .button {
+        margin-right: 0;
+    }
+}
