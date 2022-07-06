@@ -22,17 +22,26 @@ li {
 body {
     --light: #F3F1F7;
     --darkText: #260660;
-    --darkGradient: linear-gradient(180deg, rgba(17, 11, 29, 0.8) 15.1%, #4D1BAB 100%);
+    --darkGradient: linear-gradient(0deg, rgba(68,46,116,1) 12%, rgba(85,47,163,1) 50%, rgba(48,28,93,1) 94%);
 }
 
 /* Estilos globais */
 body{
     height: 100vh;
     bottom: 0;
+    width: 100%;
 }
 
-.bgDark {
+#home, #projects, #contact {
     background: var(--darkGradient);
-    height: 90vh;
-    width: 100vh;
+    color: var(--light);
+}
+
+.pageContainer {
+    height: 85vh;
+    width: 100vw;
+}
+
+#contact {
+    height: 100vh;
 }
