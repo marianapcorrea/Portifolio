@@ -29,7 +29,9 @@ body {
 body{
     height: 100vh;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
+    min-width: 390px;
+
 }
 
 #home, #projects, #contact {
@@ -45,3 +47,4 @@ body{
 #contact {
     height: 100vh;
 }
+
