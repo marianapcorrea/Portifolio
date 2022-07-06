@@ -7,13 +7,13 @@ import Contact from "./Contact/Contact";
 
 const Main = () => {
     return (
-        <div>
-            <Home className="bgDark" />
-            <About id="about" className="bgLight" />
-            <Projects id="projects" className="bgDark" />
-            <Skills id="skills" className="bgLight" />
-            <Contact id="contact" className="bgDark" />
-        </div>
+        <main>
+            <Home />
+            <About />
+            <Projects />
+            <Skills />
+            <Contact />
+        </main>
     );
 };
 
