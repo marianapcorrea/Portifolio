@@ -10,7 +10,7 @@ const Nav = () => {
     };
 
     return (
-        <div>
+        <div className="menuContainer">
             <div
                 className={styles.btnMobile}
                 id={active ? "btnActive" : ""}
