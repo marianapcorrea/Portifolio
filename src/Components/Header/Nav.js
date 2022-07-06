@@ -16,7 +16,10 @@ const Nav = () => {
                 id={active ? "btnActive" : ""}
                 onClick={ToggleMode}
             ></div>
-            <div className={active ? "menu menuActive" : "menu"}>
+            <div
+                className={active ? "menu menuActive" : "menu"}
+                onClick={ToggleMode}
+            >
                 <LinkList />
             </div>
         </div>
