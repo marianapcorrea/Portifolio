@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
     return (
-        <section id="contact">
+        <section id="contact" className="pageContainer">
             <div>img</div>
             <div>
                 <p>Fale comigo</p>

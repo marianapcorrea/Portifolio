@@ -3,10 +3,10 @@ import ProjectCarrousel from "./ProjectCarousel";
 
 const Projects = () => {
     return (
-        <div id="projects">
+        <section id="projects" className="pageContainer">
             <h1>Projetos</h1>
             <ProjectCarrousel />
-        </div>
+        </section>
     );
 };
 

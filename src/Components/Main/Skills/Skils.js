@@ -4,7 +4,7 @@ import Courses from "./Courses";
 
 const Skils = () => {
     return (
-        <section id="skills">
+        <section id="skills" className="pageContainer">
             <TechSkils />
             <Courses />
         </section>
