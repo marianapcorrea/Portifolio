@@ -5,6 +5,11 @@ const LinkList = () => {
     return (
         <ul>
             <li>
+                <AnchorLink id="linkHome" href="#home">
+                    Home
+                </AnchorLink>
+            </li>
+            <li>
                 <AnchorLink href="#about">Sobre Mim</AnchorLink>
             </li>
             <li>

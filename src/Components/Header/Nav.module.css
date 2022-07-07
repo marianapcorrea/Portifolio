@@ -4,7 +4,10 @@
 
 :global .menuContainer {
     margin:20px;
+}
 
+:global .menu #linkHome {
+    display: none;
 }
 
 @media(max-width: 850px) {
@@ -61,5 +64,8 @@
     border-bottom: 2px solid rgba(0, 0, 0, 0.05);
 }
 
+:global .menuActive #linkHome {
+    display: flex;
+}
 
 }
