@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Header.module.css";
-import Nav from "./Nav";
+import HeaderNav from "./HeaderNav";
 
 const Header = () => {
     return (
@@ -8,7 +8,7 @@ const Header = () => {
             <a className={`${styles.link} toHome`} href="/" aria-label="Home">
                 marianapcorrea
             </a>
-            <Nav className={styles.nav} />
+            <HeaderNav className={styles.nav} />
         </header>
     );
 };

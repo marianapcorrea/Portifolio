@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import styles from "./Nav.module.css";
-import LinkList from "./LinkList";
+import styles from "./HeaderNav.module.css";
+import HeaderLinkList from "./HeaderLinkList";
 
 const Nav = () => {
     const [active, setMode] = useState(false);
@@ -20,7 +20,7 @@ const Nav = () => {
                 className={active ? "menu menuActive" : "menu"}
                 onClick={ToggleMode}
             >
-                <LinkList />
+                <HeaderLinkList />
             </div>
         </div>
     );
