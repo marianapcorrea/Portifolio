@@ -29,7 +29,7 @@ const About = () => {
                 </p>
             </section>
             <section className={styles.imgContainer}>
-                <img src={photo} alt="Foto frontal de Mariana Corrêa"></img>
+                <img src={photo} alt="Foto frontal de Mariana Corrêa" />
             </section>
         </section>
     );
