@@ -1,6 +1,6 @@
 import React from "react";
 
-const TechSkils = () => {
+const SkillsTechSkils = () => {
     return (
         <section>
             <h1>Conhecimentos</h1>
@@ -13,4 +13,4 @@ const TechSkils = () => {
     );
 };
 
-export default TechSkils;
+export default SkillsTechSkils;

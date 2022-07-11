@@ -1,12 +1,13 @@
 import React from "react";
-import TechSkils from "./TechSkils";
-import Courses from "./Courses";
+import SkillsTechSkils from "./SkillsTechSkils";
+import SkillsCourses from "./SkillsCourses";
+import styles from "./Skills.module.css";
 
 const Skils = () => {
     return (
-        <section id="skills" className="pageContainer">
-            <TechSkils />
-            <Courses />
+        <section id="skills" className={`pageContainer ${styles.skills}`}>
+            <SkillsTechSkils />
+            <SkillsCourses />
         </section>
     );
 };

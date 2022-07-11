@@ -1,6 +1,6 @@
 import React from "react";
 
-const Courses = () => {
+const SkillsCourses = () => {
     return (
         <section>
             <h1>Cursos e Formações</h1>
@@ -16,4 +16,4 @@ const Courses = () => {
     );
 };
 
-export default Courses;
+export default SkillsCourses;
