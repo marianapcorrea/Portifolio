@@ -30,13 +30,14 @@ body{
     height: 100vh;
     bottom: 0;
     width: 100vw;
-    min-width: 390px;
-
+    min-width: 400px;
+    overflow-x: hidden;
 }
 
 #home, #projects, #contact {
     background: var(--darkGradient);
     color: var(--light);
+    width: 100%;
 }
 
 .pageContainer {
@@ -48,3 +49,8 @@ body{
     height: 100vh;
 }
 
+@media (max-width:450px){
+    body {
+        overflow: auto;
+    }
+}
