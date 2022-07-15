@@ -57,7 +57,7 @@ box-shadow: inset 0px 0px 19px 5px #733FDB;
             padding:12px;
             }
 }
-@media (max-width: 450px) {
+@media (max-width: 450px)  {
     .homeContent {
         min-width: 390px;
 

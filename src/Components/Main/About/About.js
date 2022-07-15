@@ -22,10 +22,7 @@ const About = () => {
                     odio ornare, tincidunt massa in, bibendum velit. Aliquam
                     molestie aliquet ligula, eget sodales ex elementum vel.
                     Integer in nisl ac dui scelerisque faucibus. Nulla feugiat
-                    nisi vel augue volutpat pretium. Nunc placerat mattis ex id
-                    finibus. Aliquam bibendum nunc quis posuere blandit. Sed
-                    suscipit mi quis tellus luctus, in euismod libero convallis.
-                    Aliquam hendrerit a ligula vitae pharetra.
+                    nisi vel augue volutpat pretium.
                 </p>
             </section>
             <section className={styles.imgContainer}>
