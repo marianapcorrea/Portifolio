@@ -2,7 +2,7 @@
     display: none;
 }
 
-:global .menuContainer {
+.menuContainer {
     margin:20px;
 }
 
@@ -44,7 +44,7 @@
  }
 
  :global .menuActive {
-        height: calc(100vh - 150px);
+        height: 100vh;
         visibility: visible;
         transition: .6s
  }
