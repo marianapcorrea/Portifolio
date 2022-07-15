@@ -1,8 +1,8 @@
 import React from "react";
-
-const Project = () => {
+import styles from "./ProjectCard.module.css";
+const ProjectCard = () => {
     return (
-        <div>
+        <div className={styles.projectCard}>
             <h2>Projeto X</h2>
             <img alt="" src="" />
             <div>
@@ -11,11 +11,13 @@ const Project = () => {
                     <li>CSS</li>
                     <li>JAVASCRIPT</li>
                 </ul>
-                <div>+</div>
+                <div className={styles.more}>
+                    <span>+</span>
+                    <a href="/">Ir ao site</a>
+                </div>
             </div>
-            <a href="/">Ir ao site</a>
         </div>
     );
 };
 
-export default Project;
+export default ProjectCard;

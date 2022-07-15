@@ -1,0 +1,33 @@
+.projectCard {
+    background: var(--light);
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    display:flex;
+    align-items: center;
+    flex-direction:column;
+}
+
+.projectCard h2 {
+    color: var(--darkText);
+    margin: 20px;
+}
+
+.projectCard img {
+    width: 200px;
+    height: 150px;
+    background: gainsboro;
+}
+
+.projectCard ul, .more {
+    color: var(--darkText);
+    font-size: .8rem;
+    padding: 10px 0;
+    font-weight: bold; 
+}
+
+.more {
+    color: var(--darkText);
+    display:flex;
+    justify-content: space-between;
+}
