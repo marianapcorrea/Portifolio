@@ -2,7 +2,7 @@ import React from "react";
 import Home from "./Home/Home";
 import About from "./About/About";
 import Projects from "./Projects/Projects";
-import Skills from "./Skills/Skils";
+import Skills from "./Skills/Skills";
 import Contact from "./Contact/Contact";
 
 const Main = () => {
