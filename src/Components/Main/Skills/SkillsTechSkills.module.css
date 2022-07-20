@@ -1,0 +1,24 @@
+#techSkills  {
+    color: var(--darkText)
+}
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 1rem;
+}
+
+.containerIcons {
+    display:grid;
+    grid-template-columns: auto auto auto;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15   0px;
+    height: 110px;
+    background: var(--light);
+    border-radius: 10px;
+    margin: .5rem;
+}
