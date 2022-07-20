@@ -49,8 +49,17 @@ body{
     height: 100vh;
 }
 
+h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
 @media (max-width:450px){
     body {
         overflow: auto;
+    }
+
+    h1 {
+        font-size: 2.5rem;
     }
 }
