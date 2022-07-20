@@ -12,8 +12,8 @@ const ProjectCard = () => {
                     <li>JAVASCRIPT</li>
                 </ul>
                 <div className={styles.more}>
-                    <span>+</span>
                     <a href="/">Ir ao site</a>
+                    <span>+</span>
                 </div>
             </div>
         </div>
