@@ -1,0 +1,15 @@
+.courses h1 {
+color: var(--darkText);
+margin: 1.5rem 0;
+}
+
+.card {
+    background: var(--darkText);
+    color: var(--light);
+    width: 16rem;
+    height: 7rem;
+    border-radius: 10px;
+    display:flex;
+    align-items: flex-start;
+    flex-direction:column;
+}
