@@ -3,16 +3,46 @@ import styles from "./SkillsTechSkills.module.css";
 import html from "../../../Assets/Skills/Html.svg";
 import css from "../../../Assets/Skills/CSS.svg";
 import js from "../../../Assets/Skills/Js.svg";
-import react from "../../../Assets/Skills/React.svg";
+import reactjs from "../../../Assets/Skills/React.svg";
 import python from "../../../Assets/Skills/Python.svg";
 
 const SkillsTechSkills = () => {
     const skillsList = [
-        { name: "HTML", description: "description" },
-        { name: "CSS", description: "description" },
-        { name: "JavaScript", description: "description" },
-        { name: "React-JS", description: "description" },
-        { name: "Python", description: "description" },
+        {
+            id: "html",
+            src: html,
+            alt: "icone HTML",
+            name: "HTML",
+            description: "description",
+        },
+        {
+            id: "css",
+            src: css,
+            CSS: "icone CSS",
+            name: "CSS",
+            description: "description",
+        },
+        {
+            id: "js",
+            src: js,
+            alt: "icone JavaScript",
+            name: "JavaScript",
+            description: "description",
+        },
+        {
+            id: "reactjs",
+            src: reactjs,
+            alt: "icone HTML",
+            name: "React-JS",
+            description: "description",
+        },
+        {
+            id: "python",
+            src: python,
+            alt: "icone Python",
+            name: "Python",
+            description: "description",
+        },
     ];
 
     const showList = skillsList.map((s, i) => (
@@ -22,27 +52,17 @@ const SkillsTechSkills = () => {
         </div>
     ));
 
+    const icons = skillsList.map((s) => (
+        <div key={s.id} id={s.id} className={styles.icon}>
+            <img src={s.src} alt={s.alt} />
+        </div>
+    ));
+
     return (
         <section id={styles.techSkills}>
             <h1>Conhecimentos</h1>
             <div className={styles.container}>
-                <div className={styles.containerIcons}>
-                    <div id={styles.html} className={styles.icon}>
-                        <img src={html} alt="Icone HTML" />
-                    </div>
-                    <div id={styles.css} className={styles.icon}>
-                        <img src={css} alt="Icone CSS" />
-                    </div>
-                    <div id={styles.js} className={styles.icon}>
-                        <img src={js} alt="Icone JavaScript" />
-                    </div>
-                    <div id={styles.react} className={styles.icon}>
-                        <img src={react} alt="Icone React" />
-                    </div>
-                    <div id={styles.python} className={styles.icon}>
-                        <img src={python} alt="Icone Python" />
-                    </div>
-                </div>
+                <div className={styles.containerIcons}>{icons}</div>
                 <div className={styles.containerText}>{showList}</div>
             </div>
         </section>
