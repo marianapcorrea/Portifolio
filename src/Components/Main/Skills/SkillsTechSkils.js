@@ -13,40 +13,45 @@ const SkillsTechSkills = () => {
             src: html,
             alt: "icone HTML",
             name: "HTML",
-            description: "description",
+            description:
+                "HTML (HiperText Markup Language) é uma linguagem de marcação usada para estruturar o conteúdo uma página web.",
         },
         {
             id: "css",
             src: css,
             CSS: "icone CSS",
             name: "CSS",
-            description: "description",
+            description:
+                "CSS (Cascading Style Sheets) é uma linguagem de folhas de estilos, usadas para estilizar o conteúdo de uma página escrita com uma linguagem de programação.",
         },
         {
             id: "js",
             src: js,
             alt: "icone JavaScript",
             name: "JavaScript",
-            description: "description",
+            description:
+                "JavaScript é uma linguagem de programação de alto nível, interpretada, com tipagem dinâmica fraca e multiparadígma. Ela permite manipular o comportamento de páginas web a fim de criar elementos dinâmicos e interativos. ",
         },
         {
             id: "reactjs",
             src: reactjs,
             alt: "icone HTML",
             name: "React-JS",
-            description: "description",
+            description:
+                "React é uma biblioteca JavaScript criada para facilitar a conexão de vários elementos em uma página. Isso permite a divisão desses elementos em pequenas partes, conhecidas como componentes, o que facilita a reutilização e manutenção. ",
         },
         {
             id: "python",
             src: python,
             alt: "icone Python",
             name: "Python",
-            description: "description",
+            description:
+                "Python é uma linguagem de programação de alto nível, interpretada, com tipagem dinâmica forte e orientada a objetos. Essa linguagem é amplamente versátil, sendo usada em aplicações desktop, web, servidores e ciência de dados.",
         },
     ];
 
-    const showList = skillsList.map((s, i) => (
-        <div key={i}>
+    const showList = skillsList.map((s) => (
+        <div key={s.id}>
             <p>{s.name}</p>
             <p>{s.description}</p>
         </div>
@@ -70,15 +75,3 @@ const SkillsTechSkills = () => {
 };
 
 export default SkillsTechSkills;
-
-/* <section id={styles.techSkills}>
-            <h1>Conhecimentos</h1>
-            <div className={styles.container}>
-                
-                <div className={styles.containerText}>
-                    <div></div>
-                    <p>Tech Name</p>
-                    <p>Tech description</p>
-                </div>
-            </div>
-        </section> */
