@@ -9,7 +9,7 @@ import python from "../../../Assets/Skills/Python.svg";
 const SkillsTechSkills = () => {
     const skillsList = [
         {
-            id: "html",
+            id: "iconHtml",
             src: html,
             alt: "icone HTML",
             name: "HTML",
@@ -17,7 +17,7 @@ const SkillsTechSkills = () => {
                 "HTML (HiperText Markup Language) é uma linguagem de marcação usada para estruturar o conteúdo uma página web.",
         },
         {
-            id: "css",
+            id: "iconCss",
             src: css,
             CSS: "icone CSS",
             name: "CSS",
@@ -25,7 +25,7 @@ const SkillsTechSkills = () => {
                 "CSS (Cascading Style Sheets) é uma linguagem de folhas de estilos, usadas para estilizar o conteúdo de uma página escrita com uma linguagem de programação.",
         },
         {
-            id: "js",
+            id: "iconJs",
             src: js,
             alt: "icone JavaScript",
             name: "JavaScript",
@@ -33,7 +33,7 @@ const SkillsTechSkills = () => {
                 "JavaScript é uma linguagem de programação de alto nível, interpretada, com tipagem dinâmica fraca e multiparadígma. Ela permite manipular o comportamento de páginas web a fim de criar elementos dinâmicos e interativos. ",
         },
         {
-            id: "reactjs",
+            id: "iconReactjs",
             src: reactjs,
             alt: "icone HTML",
             name: "React-JS",
@@ -41,7 +41,7 @@ const SkillsTechSkills = () => {
                 "React é uma biblioteca JavaScript criada para facilitar a conexão de vários elementos em uma página. Isso permite a divisão desses elementos em pequenas partes, conhecidas como componentes, o que facilita a reutilização e manutenção. ",
         },
         {
-            id: "python",
+            id: "iconPython",
             src: python,
             alt: "icone Python",
             name: "Python",
@@ -50,26 +50,23 @@ const SkillsTechSkills = () => {
         },
     ];
 
-    const showList = skillsList.map((s) => (
-        <div key={s.id}>
-            <p>{s.name}</p>
-            <p>{s.description}</p>
-        </div>
-    ));
-
-    const icons = skillsList.map((s) => (
-        <div key={s.id} id={s.id} className={styles.icon}>
-            <img src={s.src} alt={s.alt} />
+    const Icons = skillsList.map((s) => (
+        <div className={styles.singleIconContainer}>
+            <div key={s.id} id={s.id} className={styles.singleIconImg}>
+                <img src={s.src} alt={s.alt} />
+                <h4>{s.name}</h4>
+            </div>
+            <div className={styles.iconDescription}>
+                <h3>{s.name}</h3>
+                <p>{s.description}</p>
+            </div>
         </div>
     ));
 
     return (
         <section id={styles.techSkills}>
             <h1>Conhecimentos</h1>
-            <div className={styles.container}>
-                <div className={styles.containerIcons}>{icons}</div>
-                <div className={styles.containerText}>{showList}</div>
-            </div>
+            <div className={styles.container}>{Icons}</div>
         </section>
     );
 };

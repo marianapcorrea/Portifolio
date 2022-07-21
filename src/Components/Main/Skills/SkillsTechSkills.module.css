@@ -1,24 +1,59 @@
 #techSkills  {
-    color: var(--darkText)
+    color: var(--darkText);
+    margin-bottom: 2rem;
 }
+
 .container {
+    /* Configuração com Description visivel:
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: auto auto auto; 
+    max-width: 90vw;
+    */
     margin-top: 1rem;
-}
+    display:flex;
+    flex-wrap: wrap;
+    flex: 1 auto 1;
+}  
 
-.containerIcons {
+.singleIconContainer {
     display:grid;
-    grid-template-columns: auto auto auto;
 }
 
-.icon {
-    display: flex;
+.singleIconImg {
+    display:flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 15   0px;
-    height: 110px;
     background: var(--light);
     border-radius: 10px;
     margin: .5rem;
+    padding: 2rem 0;
+    width: 190px;
+
 }
+
+h4 {
+    font-weight: bold;
+    padding: 0 .5rem;
+}
+
+
+/* Acrescentar função de hover que torne visível a descrição do ícone.;
+ */
+.iconDescription {
+    display: none;
+    position: absolute;
+    right: 0;
+    width: 30vw;
+    height: fit-content;
+    justify-content: center;
+    height: 110px;
+    background: var(--light);
+    border-radius: 10px;
+    margin: 0.5rem;
+    padding: 1.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
