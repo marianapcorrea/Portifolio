@@ -45,6 +45,10 @@ body{
     width: 100vw;
 }
 
+#skills {
+    height: fit-content;
+}
+
 #contact {
     height: 100vh;
 }
