@@ -50,7 +50,7 @@ body{
 }
 
 #contact {
-    height: 100vh;
+    height: calc(100vh - 90px);
 }
 
 h1 {
@@ -58,6 +58,9 @@ h1 {
     font-weight: bold;
 }
 
+p, a {
+    font-size:1.125rem
+}
 @media (max-width:450px){
     body {
         overflow: auto;
