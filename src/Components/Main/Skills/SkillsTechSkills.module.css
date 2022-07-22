@@ -25,16 +25,17 @@
     justify-content: center;
     align-items: center;
     background: var(--light);
-    border-radius: 10px;
+    border-radius: 25px;
     margin: .5rem;
     padding: 2rem 0;
-    width: 190px;
+    width: 16rem;
 
 }
 
 h4 {
     font-weight: bold;
     padding: 0 .5rem;
+    font-size: 1.25rem;
 }
 
 
@@ -56,4 +57,12 @@ h4 {
     align-items: center;
 }
 
+@media (max-width:760px){
+    .container{
+        justify-content: center;
+    }
+    .singleIconImg {
+        width: 13rem;
+    }
 
+}
