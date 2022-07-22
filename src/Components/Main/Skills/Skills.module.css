@@ -5,3 +5,7 @@
     height: 90vh;
 }
 
+@media (max-width:760px){
+.skills {
+    text-align: center;}
+}
