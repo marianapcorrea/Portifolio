@@ -5,19 +5,50 @@ body {
 
 .footer {
     background-color: var(--light);
-    height: 60px;
+    height: 85px;
     width: 100%;
-    padding: 1rem;
-    display: flex;
+    padding: 1rem 3rem;
+   display: flex;
+    flex-direction: row;
     align-items: center;
     position: fixed;
     bottom: 0;
-    justify-content: center;
+    justify-content: space-between;
     z-index: 200;
 }
 
 .footer p {
     color: var(--darkText);
+    font-size: 1.125rem;
+}
 
+.credits {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 6rem;
+}
+
+.myName {
+    font-weight: 700;
+}
+
+.repo {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+@media (max-width: 850px) {
+    .footer {
+        position: relative;
+        height: 90px;
+        padding: 1rem 1.5rem;
+        z-index: 50;
+
+    }
+
+    .footer p {
+        font-size: 1rem;
+    }
 }
 
