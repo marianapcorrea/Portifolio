@@ -1,23 +1,74 @@
 import React from "react";
+import html from "../../../Assets/Skills/Html.svg";
 import styles from "./ProjectCard.module.css";
+
 const ProjectCard = () => {
-    return (
+    const ProjectList = [
+        {
+            name: "Project 1",
+            tech: "HTML, CSS, JavaScript",
+            src: html,
+            alt: "imagem",
+            link: "/",
+        },
+        {
+            name: "Project 2",
+            tech: "HTML, CSS, JavaScript",
+            src: html,
+            alt: "imagem",
+            link: "/",
+        },
+        {
+            name: "Project 3",
+            tech: "HTML, CSS, JavaScript",
+            src: html,
+            alt: "imagem",
+            link: "/",
+        },
+        {
+            name: "Project 4",
+            tech: "HTML, CSS, JavaScript",
+            src: html,
+            alt: "imagem",
+            link: "/",
+        },
+        {
+            name: "Project 5",
+            tech: "HTML, CSS, JavaScript",
+            src: html,
+            alt: "imagem",
+            link: "/",
+        },
+        {
+            name: "Project 6",
+            tech: "HTML, CSS, JavaScript",
+            src: html,
+            alt: "imagem",
+            link: "/",
+        },
+        {
+            name: "Project 7",
+            tech: "HTML, CSS, JavaScript",
+            src: html,
+            alt: "imagem",
+            link: "/",
+        },
+    ];
+    const Icons = ProjectList.map((p) => (
         <div className={styles.projectCard}>
-            <h2>Projeto X</h2>
-            <img alt="" src="" />
+            <h2>{p.name}</h2>
+            <img alt={p.imagem} src={p.src} />
             <div>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JAVASCRIPT</li>
-                </ul>
+                <span className={styles.techs}>{p.tech}</span>
                 <div className={styles.more}>
-                    <a href="/">Ir ao site</a>
-                    <span>+</span>
+                    <a href={p.link}>Ir ao site</a>
+                    <span>Descrição</span>
                 </div>
             </div>
         </div>
-    );
+    ));
+
+    return <section className={styles.container}>{Icons}</section>;
 };
 
 export default ProjectCard;
