@@ -1,4 +1,5 @@
 import React from "react";
+import { useRef } from "react";
 import html from "../../../Assets/Skills/Html.svg";
 import styles from "./ProjectCard.module.css";
 
@@ -54,6 +55,7 @@ const ProjectCard = () => {
             link: "/",
         },
     ];
+
     const Icons = ProjectList.map((p) => (
         <div className={styles.projectCard}>
             <h2>{p.name}</h2>
@@ -67,8 +69,34 @@ const ProjectCard = () => {
             </div>
         </div>
     ));
+    const carousel = useRef(null);
 
-    return <section className={styles.container}>{Icons}</section>;
+    const HandleLeftClick = (e) => {
+        e.preventDefault();
+        carousel.current.scrollLeft -= carousel.current.offsetWidth;
+    };
+
+    const HandleRightClick = (e) => {
+        e.preventDefault();
+        carousel.current.scrollLeft += carousel.current.offsetWidth;
+    };
+
+    return (
+        <section className={styles.container}>
+            <button onClick={HandleLeftClick} className={styles.btnSlide}>
+                <div className={`${styles.arrow} ${styles.arLeft}`}></div>
+            </button>
+            <div className={styles.carousel} ref={carousel}>
+                {Icons}
+            </div>
+            <button
+                onClick={HandleRightClick}
+                className={`${styles.btnSlide} ${styles.right}`}
+            >
+                <div className={`${styles.arrow} ${styles.arRight}`}></div>
+            </button>
+        </section>
+    );
 };
 
 export default ProjectCard;
