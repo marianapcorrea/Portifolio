@@ -1,3 +1,11 @@
+.container {
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+    scroll-behavior: smooth;
+}
+
+
 .projectCard {
     background: var(--light);
     width: 250px;
@@ -6,7 +14,11 @@
     display:flex;
     align-items: center;
     flex-direction:column;
+    margin: 0 2.5rem;
+    transition: transform 300ms ease 100ms;
 }
+
+
 
 .projectCard h2 {
     color: var(--darkText);
@@ -17,17 +29,20 @@
     width: 200px;
     height: 150px;
     background: gainsboro;
+    margin-bottom: .8rem;
 }
 
-.projectCard ul, .more {
+.techs, .more {
     color: var(--darkText);
-    font-size: .8rem;
-    padding: 10px 0;
+    font-size: 1rem;
     font-weight: bold; 
 }
 
+
 .more {
-    color: var(--darkText);
     display:flex;
+    flex-direction:row;
     justify-content: space-between;
+    padding: 1rem 0;
+
 }
