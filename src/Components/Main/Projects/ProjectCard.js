@@ -56,8 +56,8 @@ const ProjectCard = () => {
         },
     ];
 
-    const Icons = ProjectList.map((p) => (
-        <div className={styles.projectCard}>
+    const Icons = ProjectList.map((p, index) => (
+        <div key={index} className={styles.projectCard}>
             <h2>{p.name}</h2>
             <img alt={p.imagem} src={p.src} />
             <div>
