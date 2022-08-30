@@ -1,0 +1,9 @@
+.projects {
+    padding: 140px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects h1 {
+    padding-bottom: 3rem;
+}

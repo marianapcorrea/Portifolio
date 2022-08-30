@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectCarrousel from "./ProjectCarousel";
-import styles from "./Project.module.css";
+import styles from "./Projects.module.css";
 
 const Projects = () => {
     return (
