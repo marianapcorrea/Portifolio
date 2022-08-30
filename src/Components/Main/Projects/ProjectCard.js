@@ -83,18 +83,25 @@ const ProjectCard = () => {
 
     return (
         <section className={styles.container}>
-            <button onClick={HandleLeftClick} className={styles.btnSlide}>
-                <div className={`${styles.arrow} ${styles.arLeft}`}></div>
-            </button>
-            <div className={styles.carousel} ref={carousel}>
-                {Icons}
+            <div className={styles.projectsBox}>
+                <button onClick={HandleLeftClick} className={styles.btnSlide}>
+                    <div className={`${styles.arrow} ${styles.arLeft}`}></div>
+                </button>
+                <div className={styles.carousel} ref={carousel}>
+                    {Icons}
+                </div>
+                <button onClick={HandleRightClick} className={`${styles.btnSlide} ${styles.right}`}>
+                    <div className={`${styles.arrow} ${styles.arRight}`}></div>
+                </button>
             </div>
-            <button
-                onClick={HandleRightClick}
-                className={`${styles.btnSlide} ${styles.right}`}
-            >
-                <div className={`${styles.arrow} ${styles.arRight}`}></div>
-            </button>
+            <div className={styles.btnsMobileContainer}>
+                <button onClick={HandleLeftClick} className={styles.btnSlideMobile}>
+                    Anterior
+                </button>
+                <button onClick={HandleRightClick} className={styles.btnSlideMobile}>
+                    Próximo
+                </button>
+            </div>
         </section>
     );
 };
