@@ -6,12 +6,9 @@ const Home = () => {
         <section id="home" className="pageContainer">
             <div className={style.homeContainer}>
                 <div className={style.homeContent}>
-                    <p>Olá! Eu sou </p>
-                    <h1>Lorem Ipsum</h1>
-                    <p>
-                        Neque porro quisquam est qui dolorem ipsum quia dolor
-                        sit amet, consectetur, adipisci velit
-                    </p>
+                    <p>Olá! Eu sou a</p>
+                    <h1>Mariana</h1>
+                    <p>desenvolvedora Front-End.</p>
                 </div>
                 <button className={style.button}>Download Currículo</button>
             </div>
