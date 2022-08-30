@@ -1,82 +1,78 @@
-:global #home{
+:global #home {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-
 }
 
 .homeContent {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    font-size:1.5rem;
-    padding:0 100px ;
-    min-width: 600px;   
+    font-size: 1.5rem;
+    padding: 0 100px;
+    min-width: 600px;
 }
 
-.homeContent p{
-    font-size:1.5rem;
-    
+.homeContent p {
+    font-size: 2rem;
 }
 
-.homeContent h1{
-    font-size:7rem;
+.homeContent h1 {
+    font-size: 7rem;
 }
 
- .button {
+.button {
     align-self: flex-start;
     width: 10rem;
     margin: 4rem 100px 0;
     padding: 12px;
     border-radius: 10px;
-    background:  var(--light);;
+    background: var(--light);
     border: 1px solid var(--darkText);
     color: var(--darkText);
-    font-size: .8rem;
+    font-size: 0.8rem;
 }
 
-.button:active{
-padding:14px;
-box-shadow: inset 0px 0px 19px 5px #733FDB;
+.button:active {
+    padding: 14px;
+    box-shadow: inset 0px 0px 19px 5px #733fdb;
 }
 
-.button:hover{
-box-shadow: inset 0px 0px 19px 5px #733FDB;
+.button:hover {
+    box-shadow: inset 0px 0px 19px 5px #733fdb;
 }
 
-@media (max-width:1100px) {
-    .homeContent h1{
+@media (max-width: 1100px) {
+    .homeContent h1 {
         font-size: 6rem;
     }
 
-    .homeContent p{
-        font-size:1.25rem;
+    .homeContent p {
+        font-size: 1.75rem;
     }
 
-        .button:active{
-            padding:12px;
-            }
+    .button:active {
+        padding: 12px;
+    }
 }
-@media (max-width: 450px)  {
+@media (max-width: 450px) {
     .homeContent {
         min-width: 390px;
-
     }
-    .homeContent h1{
+    .homeContent h1 {
         font-size: 5rem;
     }
 
-    .homeContent p{
-        font-size:1rem;
+    .homeContent p {
+        font-size: 1.5rem;
     }
-    
+
     .button {
-        font-size: .9rem;
+        font-size: 0.9rem;
     }
 
-    .button:active{
-        padding:12px;
-        }
+    .button:active {
+        padding: 12px;
+    }
 }
-
