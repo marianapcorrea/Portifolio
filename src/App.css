@@ -1,54 +1,60 @@
 /*Reset*/
 * {
     box-sizing: border-box;
-  }
+}
 
-  h1,
+h1,
 h2,
 h3,
 p {
-  margin: 0px;
+    margin: 0px;
 }
 
 ul,
 li {
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
 }
 
 /* Variáveis */
 
 body {
-    --light: #F3F1F7;
+    --light: #f3f1f7;
     --darkText: #260660;
-    --darkGradient: linear-gradient(0deg, rgba(68,46,116,1) 12%, rgba(85,47,163,1) 50%, rgba(48,28,93,1) 94%);
+    --darkGradient: linear-gradient(
+        0deg,
+        rgba(68, 46, 116, 1) 12%,
+        rgba(85, 47, 163, 1) 50%,
+        rgba(48, 28, 93, 1) 94%
+    );
 }
 
 /* Estilos globais */
-body{
-    height: 100vh;
+#root {
     bottom: 0;
     width: 100vw;
-    min-width: 400px;
+    min-width: 500px;
     overflow-x: hidden;
 }
 
-#home, #projects, #contact {
+#home,
+#projects,
+#contact {
     background: var(--darkGradient);
     color: var(--light);
     width: 100%;
 }
 
 .pageContainer {
-    height: 85vh;
-    width: 100vw;
-}
-
-#skills {
     height: fit-content;
+    min-height: 85vh;
+    width: 100vw;
+    min-width: 550px;
 }
-
+#home {
+    height: 100vh;
+}
 #contact {
     height: calc(100vh - 90px);
 }
@@ -58,12 +64,14 @@ h1 {
     font-weight: bold;
 }
 
-p, a {
-    font-size:1.125rem
+p,
+a {
+    font-size: 1.125rem;
 }
-@media (max-width:450px){
-    body {
+@media (max-width: 450px) {
+    #root {
         overflow: auto;
+        width: 100vw;
     }
 
     h1 {
