@@ -10,7 +10,7 @@
     flex-direction: row;
     overflow: hidden;
     scroll-behavior: smooth;
-    padding: 2rem
+    padding: 2rem;
 }
 
 .btnSlide {
@@ -18,8 +18,8 @@
     border: none;
     display: flex;
     cursor: pointer;
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
     padding: 0 2rem;
 }
 
@@ -28,35 +28,35 @@
     padding: 20px;
     border-left: 8px solid var(--darkText);
     border-bottom: 8px solid var(--darkText);
-  }
+}
 
-  .arRight {
+.arRight {
     transform: rotate(225deg);
-  }
+}
 
-  .arLeft {
+.arLeft {
     transform: rotate(45deg);
-  }
+}
 
-  .btnSlide:hover {
-    transform: scale(1.125) !important;
-  }
+.btnSlide:hover {
+    transform: scale(1.1) !important;
+}
 
 .projectCard {
     background: var(--light);
-    width: 250px;
+    width: 400px;
     height: 300px;
     border-radius: 10px;
-    display:flex;
+    display: flex;
     align-items: center;
-    flex-direction:column;
+    flex-direction: column;
     margin-right: 3rem;
     transition: transform 300ms ease 100ms;
 }
 
 .projectCard:hover {
     transform: scale(1.125) !important;
-  }
+}
 
 .projectCard h2 {
     color: var(--darkText);
@@ -64,25 +64,67 @@
 }
 
 .projectCard img {
-    width: 200px;
+    width: 400px;
     height: 150px;
     background: gainsboro;
-    margin-bottom: .8rem;
+    margin-bottom: 0.8rem;
 }
 
-.techs, .more {
+.techs,
+.more {
     color: var(--darkText);
     font-size: 1rem;
-    font-weight: bold; 
+    font-weight: bold;
 }
-
 
 .more {
-    display:flex;
-    flex-direction:row;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding: 1rem 0;
-
 }
 
+.btnsMobileContainer {
+    display: none;
+}
 
+.projectsBox {
+    overflow: hidden;
+    display: flex;
+}
+
+@media (max-width: 760px) {
+    .btnSlide {
+        display: none;
+    }
+
+    .btnSlideMobile {
+        align-items: center;
+        justify-content: center;
+        width: 10rem;
+        height: 4rem;
+        margin: 1rem;
+        padding: 12px;
+        border-radius: 10px;
+        background: var(--light);
+        border: 1px solid var(--darkText);
+        color: var(--darkText);
+        font-size: 1.75rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        flex-grow: 1;
+    }
+
+    .btnsMobileContainer {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        justify-content: center;
+        bottom: 0px;
+    }
+}
