@@ -22,19 +22,14 @@ li {
 body {
     --light: #f3f1f7;
     --darkText: #260660;
-    --darkGradient: linear-gradient(
-        0deg,
-        rgba(68, 46, 116, 1) 12%,
-        rgba(85, 47, 163, 1) 50%,
-        rgba(48, 28, 93, 1) 94%
-    );
+    --darkGradient: linear-gradient(180deg, #312259d6 15.1%, #6b529d 67.4%, #0c0220f0 95.94%);
 }
 
 /* Estilos globais */
 #root {
     bottom: 0;
     width: 100vw;
-    min-width: 500px;
+    min-width: 350px;
     overflow-x: hidden;
 }
 
@@ -50,7 +45,7 @@ body {
     height: fit-content;
     min-height: 85vh;
     width: 100vw;
-    min-width: 550px;
+    min-width: 350px;
 }
 #home {
     height: 100vh;
