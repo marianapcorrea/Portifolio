@@ -1,25 +1,24 @@
 .courses h1 {
-color: var(--darkText);
-margin: 1rem 0;
+    color: var(--text);
+    margin: 1rem 0;
 }
 
 .cardContainer {
-   display:flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   justify-content: space-between;
-
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .card {
-    background: var(--darkGradient);
-    color: var(--light);
+    background: var(--text);
+    color: var(--black);
     width: 18rem;
     height: 10rem;
     border-radius: 25px;
-    display:flex;
+    display: flex;
     align-items: flex-start;
-    flex-direction:column;
+    flex-direction: column;
     margin: 1rem;
     padding: 1.5rem 1rem;
 }
@@ -39,47 +38,46 @@ margin: 1rem 0;
 }
 
 .info p {
-    font-size:1rem;
-    padding: .25rem;
+    font-size: 1rem;
+    padding: 0.25rem;
 }
 
 .conclusion {
-    font-size:1.75rem;
-    font-weight: 800;    
+    font-size: 1.75rem;
+    font-weight: 800;
 }
 
-
-@media (max-width:1080px){
-    .cardContainer{
+@media (max-width: 1080px) {
+    .cardContainer {
         justify-content: center;
     }
 }
 
-@media (max-width:760px){
-    .cardContainer{
+@media (max-width: 760px) {
+    .cardContainer {
         justify-content: center;
     }
 
     .card {
         width: 14rem;
         height: 9rem;
-        padding:1rem;
+        padding: 1rem;
     }
 
     .subcontainer {
-        margin-top: .5rem;
+        margin-top: 0.5rem;
     }
 
     .info p {
-        font-size:1rem;
-        padding: .25rem;
+        font-size: 1rem;
+        padding: 0.25rem;
     }
 
     .conclusion {
-        font-size:1.5rem;
-        font-weight: 800;    
+        font-size: 1.5rem;
+        font-weight: 800;
     }
-    
+
     .info {
         margin-right: 1rem;
         text-align: start;

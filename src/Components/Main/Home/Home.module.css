@@ -28,19 +28,18 @@
     margin: 4rem 100px 0;
     padding: 12px;
     border-radius: 10px;
-    background: var(--light);
-    border: 1px solid var(--darkText);
-    color: var(--darkText);
+    border: 1px solid var(--text);
+    color: var(--black);
     font-size: 0.8rem;
 }
 
 .button:active {
     padding: 14px;
-    box-shadow: inset 0px 0px 19px 5px #733fdb;
+    box-shadow: inset 0px 0px 19px 5px var(--darkGrey);
 }
 
 .button:hover {
-    box-shadow: inset 0px 0px 19px 5px #733fdb;
+    box-shadow: inset 0px 0px 19px 5px var(--darkGrey);
 }
 
 @media (max-width: 1100px) {

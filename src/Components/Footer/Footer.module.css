@@ -4,11 +4,11 @@ body {
 }
 
 .footer {
-    background-color: var(--light);
+    background: var(--black);
     height: 85px;
     width: 100%;
     padding: 1rem 3rem;
-   display: flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
     position: fixed;
@@ -18,7 +18,6 @@ body {
 }
 
 .footer p {
-    color: var(--darkText);
     font-size: 1.125rem;
 }
 
@@ -44,11 +43,9 @@ body {
         height: 90px;
         padding: 1rem 1.5rem;
         z-index: 50;
-
     }
 
     .footer p {
         font-size: 1rem;
     }
 }
-
