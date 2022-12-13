@@ -12,9 +12,7 @@ const Contact = () => {
             <div className={styles.email}>
                 <p>Fale comigo!</p>
                 <h3>
-                    <a href="mailto: mpcs270391@gmail.com">
-                        mpcs270391@gmail.com
-                    </a>
+                    <a href="mailto: mpcs270391@gmail.com">mpcs270391@gmail.com</a>
                 </h3>
             </div>
             <div className={styles.socialMedia}>
