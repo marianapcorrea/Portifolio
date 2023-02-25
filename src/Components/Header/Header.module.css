@@ -37,7 +37,7 @@ a:before {
     height: 3px;
     bottom: -5px;
     left: 0;
-    background-color: #957dbf;
+    background-color: var(--mediumBlue);
     visibility: hidden;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);

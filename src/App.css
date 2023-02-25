@@ -21,15 +21,17 @@ li {
 
 body {
     --text: #f4f2e1;
-    --darkestGrey: #2c2a2a;
-    --darkGrey: #313339;
-    --black: #222;
+    --darkestGrey: #141417;
+    --darkGrey: #17181c;
+    --black: #020111;
+    --mediumBlue: #7e75d3;
+    --darkBlue: #0e084a;
 }
 
 /* Estilos globais */
 #root {
     bottom: 0;
-    width: 100vw;
+    width: 100%;
     min-width: 350px;
     overflow-x: hidden;
     color: var(--text);

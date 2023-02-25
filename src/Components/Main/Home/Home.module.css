@@ -1,8 +1,18 @@
-:global #home {
+.pageContainer {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    background-color: #000;
+}
+
+.homeContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    top: 12rem;
+    left: 10rem;
 }
 
 .homeContent {
