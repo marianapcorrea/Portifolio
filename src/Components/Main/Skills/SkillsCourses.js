@@ -4,27 +4,39 @@ import styles from "./SkillsCourses.module.css";
 const SkillsCourses = () => {
     const coursesList = [
         {
-            course: "Curso",
-            institute: "Escola",
-            workload: "XXX",
+            course: "REACT COMPLETO",
+            institute: "ORIGAMID",
+            workload: "36 Horas",
             conclusion: "2022",
         },
         {
-            course: "Curso",
-            institute: "Escola",
-            workload: "XXX",
+            course: "DESENVOLVEDOR(A) REACT",
+            institute: "FACULDADE XP EDUCAÇÃO-IGTI",
+            workload: "148 Horas",
             conclusion: "2022",
         },
         {
-            course: "Curso",
-            institute: "Escola",
-            workload: "XXX",
+            course: "DESENVOLVEDOR(A) FRONT-END",
+            institute: "FACULDADE XP EDUCAÇÃO-IGTI",
+            workload: "148 Horas",
             conclusion: "2022",
         },
         {
-            course: "Curso",
-            institute: "Escola",
-            workload: "XXX",
+            course: "DESENVOLVEDOR(A) PYTHON",
+            institute: "FACULDADE XP EDUCAÇÃO-IGTI",
+            workload: "148 Horas",
+            conclusion: "2021",
+        },
+        {
+            course: "FLEXBOX",
+            institute: "ORIGAMID",
+            workload: "6 Horas",
+            conclusion: "2022",
+        },
+        {
+            course: "CAPACITA MDT - CHATBOT ",
+            institute: "LET'SBOT",
+            workload: "50 Horas",
             conclusion: "2022",
         },
     ];
