@@ -51,15 +51,9 @@ const SkillsTechSkills = () => {
     ];
 
     const Icons = skillsList.map((s) => (
-        <div className={styles.singleIconContainer}>
-            <div key={s.id} id={s.id} className={styles.singleIconImg}>
-                <img src={s.src} alt={s.alt} />
-                <h4>{s.name}</h4>
-            </div>
-            <div className={styles.iconDescription}>
-                <h3>{s.name}</h3>
-                <p>{s.description}</p>
-            </div>
+        <div className={styles.singleIconContainer} key={s.id} id={s.id}>
+            <img src={s.src} alt={s.alt} />
+            <h4>{s.name}</h4>
         </div>
     ));
 
