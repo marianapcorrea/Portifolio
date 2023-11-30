@@ -1,4 +1,4 @@
-header {
+.header {
     height: 90px;
     width: 100%;
     padding: 20px;
@@ -10,18 +10,18 @@ header {
     background: var(--black);
 }
 
-nav {
+.header nav {
     display: flex;
     flex-direction: row;
 }
 
-ul {
+.header ul {
     display: flex;
     flex-direction: row;
     gap: 1rem;
 }
 
-a {
+.header a {
     font-weight: 600;
     line-height: 1;
     position: relative;
@@ -30,7 +30,7 @@ a {
     color: var(--text);
 }
 
-a:before {
+.header a:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -45,7 +45,7 @@ a:before {
     transition: all 0.3s ease-in-out 0s;
 }
 
-a:hover:before {
+.header a:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
@@ -68,7 +68,7 @@ a:hover:before {
 }
 
 @media (max-width: 850px) {
-    nav {
+  .header  nav {
         display: none;
     }
 }

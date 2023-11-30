@@ -1,8 +1,8 @@
-import React from "react";
-import ProjectCard from "./ProjectCard";
+import React from 'react';
+import ProjectCard from './ProjectCard';
 
-const ProjectCarrousel = () => {
-    return <ProjectCard />;
-};
+function ProjectCarrousel() {
+  return <ProjectCard />;
+}
 
 export default ProjectCarrousel;
