@@ -20,7 +20,6 @@ function About() {
           apaixonei pela arte de fazer códigos e resolvi mudar da minha carreira em
           Conservação e Restauração de Bens Culturais para me tornar desenvolvedora web.
         </p>
-        <p>Hoje, atuo como freelancer, desenvolvendo a interface gráfica de páginas web.</p>
 
       </section>
       <section className={ styles.imgContainer }>

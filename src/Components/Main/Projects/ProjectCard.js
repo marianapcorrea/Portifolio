@@ -3,52 +3,53 @@ import html from '../../../Assets/Skills/Html.svg';
 import styles from './ProjectCard.module.css';
 
 function ProjectCard() {
+  const frontend = 'HTML, CSS, JavaScript';
   const ProjectList = [
     {
       name: 'Project 1',
-      tech: 'HTML, CSS, JavaScript',
+      tech: frontend,
       src: html,
       alt: 'imagem',
       link: '/',
     },
     {
       name: 'Project 2',
-      tech: 'HTML, CSS, JavaScript',
+      tech: frontend,
       src: html,
       alt: 'imagem',
       link: '/',
     },
     {
       name: 'Project 3',
-      tech: 'HTML, CSS, JavaScript',
+      tech: frontend,
       src: html,
       alt: 'imagem',
       link: '/',
     },
     {
       name: 'Project 4',
-      tech: 'HTML, CSS, JavaScript',
+      tech: frontend,
       src: html,
       alt: 'imagem',
       link: '/',
     },
     {
       name: 'Project 5',
-      tech: 'HTML, CSS, JavaScript',
+      tech: frontend,
       src: html,
       alt: 'imagem',
       link: '/',
     },
     {
       name: 'Project 6',
-      tech: 'HTML, CSS, JavaScript',
+      tech: frontend,
       src: html,
       alt: 'imagem',
       link: '/',
     },
     {
       name: 'Project 7',
-      tech: 'HTML, CSS, JavaScript',
+      tech: frontend,
       src: html,
       alt: 'imagem',
       link: '/',
@@ -89,7 +90,7 @@ function ProjectCard() {
         <div className={ styles.carousel } ref={ carousel }>
           {Icons}
         </div>
-        <button onClick={ HandleRightClick } className={ `${styles.btnSlide} ${styles.right}` }>
+        <button onClick={ HandleRightClick } className={ styles.btnSlide }>
           <div className={ `${styles.arrow} ${styles.arRight}` } />
         </button>
       </div>

@@ -2,34 +2,36 @@ import React from 'react';
 import styles from './SkillsCourses.module.css';
 
 function SkillsCourses() {
+  const igti = 'FACULDADE XP EDUCAÇÃO-IGTI';
+  const origamid = 'ORIGAMID';
   const coursesList = [
     {
       course: 'REACT COMPLETO',
-      institute: 'ORIGAMID',
+      institute: origamid,
       workload: '36 Horas',
       conclusion: '2022',
     },
     {
       course: 'DESENVOLVEDOR(A) REACT',
-      institute: 'FACULDADE XP EDUCAÇÃO-IGTI',
+      institute: igti,
       workload: '148 Horas',
       conclusion: '2022',
     },
     {
       course: 'DESENVOLVEDOR(A) FRONT-END',
-      institute: 'FACULDADE XP EDUCAÇÃO-IGTI',
+      institute: igti,
       workload: '148 Horas',
       conclusion: '2022',
     },
     {
       course: 'DESENVOLVEDOR(A) PYTHON',
-      institute: 'FACULDADE XP EDUCAÇÃO-IGTI',
+      institute: igti,
       workload: '148 Horas',
       conclusion: '2021',
     },
     {
       course: 'FLEXBOX',
-      institute: 'ORIGAMID',
+      institute: origamid,
       workload: '6 Horas',
       conclusion: '2022',
     },
@@ -41,7 +43,7 @@ function SkillsCourses() {
     },
   ];
 
-  const mapCourses = coursesList.map((c, i) => (
+  const mapCourses = coursesList.map((c) => (
     <div key={ c.i } className={ styles.card }>
       <h3>{c.course}</h3>
       <div className={ styles.subcontainer }>

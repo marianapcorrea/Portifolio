@@ -14,7 +14,7 @@ function SkillsTechSkills() {
       alt: 'icone HTML',
       name: 'HTML',
       description:
-                'HTML (HiperText Markup Language) é uma linguagem de marcação usada para estruturar o conteúdo uma página web.',
+        'HTML (HiperText Markup Language) é uma linguagem de marcação usada para estruturar o conteúdo uma página web.',
     },
     {
       id: 'iconCss',
@@ -22,7 +22,7 @@ function SkillsTechSkills() {
       CSS: 'icone CSS',
       name: 'CSS',
       description:
-                'CSS (Cascading Style Sheets) é uma linguagem de folhas de estilos, usadas para estilizar o conteúdo de uma página escrita com uma linguagem de programação.',
+      'CSS (Cascading Style Sheets) é uma linguagem de folhas de estilos, usadas para estilizar o conteúdo de uma página escrita com uma linguagem de programação.',
     },
     {
       id: 'iconJs',
@@ -30,7 +30,7 @@ function SkillsTechSkills() {
       alt: 'icone JavaScript',
       name: 'JavaScript',
       description:
-                'JavaScript é uma linguagem de programação de alto nível, interpretada, com tipagem dinâmica fraca e multiparadígma. Ela permite manipular o comportamento de páginas web a fim de criar elementos dinâmicos e interativos. ',
+        'JavaScript é uma linguagem de programação de alto nível, interpretada, com tipagem dinâmica fraca e multiparadígma. Ela permite manipular o comportamento de páginas web a fim de criar elementos dinâmicos e interativos. ',
     },
     {
       id: 'iconReactjs',
@@ -38,7 +38,7 @@ function SkillsTechSkills() {
       alt: 'icone HTML',
       name: 'React-JS',
       description:
-                'React é uma biblioteca JavaScript criada para facilitar a conexão de vários elementos em uma página. Isso permite a divisão desses elementos em pequenas partes, conhecidas como componentes, o que facilita a reutilização e manutenção. ',
+        'React é uma biblioteca JavaScript criada para facilitar a conexão de vários elementos em uma página. Isso permite a divisão desses elementos em pequenas partes, conhecidas como componentes, o que facilita a reutilização e manutenção. ',
     },
     {
       id: 'iconPython',
@@ -46,7 +46,7 @@ function SkillsTechSkills() {
       alt: 'icone Python',
       name: 'Python',
       description:
-                'Python é uma linguagem de programação de alto nível, interpretada, com tipagem dinâmica forte e orientada a objetos. Essa linguagem é amplamente versátil, sendo usada em aplicações desktop, web, servidores e ciência de dados.',
+        'Python é uma linguagem de programação de alto nível, interpretada, com tipagem dinâmica forte e orientada a objetos. Essa linguagem é amplamente versátil, sendo usada em aplicações desktop, web, servidores e ciência de dados.',
     },
   ];
 
@@ -58,7 +58,7 @@ function SkillsTechSkills() {
   ));
 
   return (
-    <section id={ styles.techSkills }>
+    <section id="techSkills">
       <h1>Conhecimentos</h1>
       <div className={ styles.container }>{Icons}</div>
     </section>
