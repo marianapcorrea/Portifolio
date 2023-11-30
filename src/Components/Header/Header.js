@@ -9,10 +9,14 @@ const Header = () => {
             <AnchorLink
                 id="linkHome"
                 href="#home"
-                className={`${styles.link} toHome`}
+                className={`${styles.linkHome} toHome`}
                 aria-label="Home"
             >
-                marianapcorrea
+                <span className={styles.tag}>{'<'}</span>
+                <span>mariana</span>
+                <span className={styles.dot}>.</span>
+                <span>correa</span>
+                <span className={styles.tag}>{'/>' }</span>
             </AnchorLink>
             <HeaderNav className={styles.nav} />
         </header>

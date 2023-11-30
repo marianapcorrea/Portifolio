@@ -13,6 +13,9 @@ const LinkList = () => {
                 <AnchorLink href="#about">Sobre Mim</AnchorLink>
             </li>
             <li>
+                <AnchorLink href="#servces">Serviços</AnchorLink>
+            </li>
+            <li>
                 <AnchorLink href="#projects">Projetos</AnchorLink>
             </li>
             <li>

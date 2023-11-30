@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./Home.module.css";
 import HomeSocialMediaList from "./HomeSocialMediaList";
-import homeBg from "../../../Assets/Home/home_bg.png";
+// import homeBg from "../../../Assets/Home/home_bg.png";
 
 const Home = () => {
     return (
@@ -9,7 +9,7 @@ const Home = () => {
             id="home"
             className={style.pageContainer}
             style={{
-                backgroundImage: `url(${homeBg})`,
+                // backgroundImage: `url(${homeBg})`,
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "100%",
             }}

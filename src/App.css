@@ -26,6 +26,7 @@ body {
     --black: #020111;
     --mediumBlue: #7e75d3;
     --darkBlue: #0e084a;
+    --darkYellow: #ad9c10;
 }
 
 /* Estilos globais */
@@ -39,8 +40,8 @@ body {
 }
 
 #home,
-#projects,
-#contact {
+#services,
+#skills {
     background: var(--darkestGrey);
     width: 100%;
 }
@@ -50,6 +51,8 @@ body {
     min-height: 85vh;
     width: 100vw;
     min-width: 350px;
+    padding: 0 8rem;
+
 }
 #home {
     height: 100vh;

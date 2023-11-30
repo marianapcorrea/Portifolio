@@ -34,10 +34,10 @@ a:before {
     content: "";
     position: absolute;
     width: 100%;
-    height: 3px;
+    height: 1px;
     bottom: -5px;
     left: 0;
-    background-color: var(--mediumBlue);
+    background-color: var(--darkYellow);
     visibility: hidden;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
@@ -49,6 +49,22 @@ a:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
+}
+
+.linkHome {
+  display:flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.dot {
+  color: var(--darkYellow);
+}
+
+.tag {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--darkYellow);
 }
 
 @media (max-width: 850px) {
