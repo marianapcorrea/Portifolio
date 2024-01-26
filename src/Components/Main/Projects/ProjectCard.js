@@ -84,13 +84,22 @@ function ProjectCard() {
   return (
     <section className={ styles.container }>
       <div className={ styles.projectsBox }>
-        <button onClick={ HandleLeftClick } className={ styles.btnSlide }>
+        <button
+          onClick={ HandleLeftClick }
+          className={ styles.btnSlide }
+          aria-label="Previous"
+        >
           <div className={ `${styles.arrow} ${styles.arLeft}` } />
         </button>
         <div className={ styles.carousel } ref={ carousel }>
           {Icons}
         </div>
-        <button onClick={ HandleRightClick } className={ styles.btnSlide }>
+
+        <button
+          onClick={ HandleRightClick }
+          className={ styles.btnSlide }
+          aria-label="Next"
+        >
           <div className={ `${styles.arrow} ${styles.arRight}` } />
         </button>
       </div>

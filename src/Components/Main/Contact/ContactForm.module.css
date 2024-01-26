@@ -1,0 +1,42 @@
+
+.formContainer{
+  width: 30vw;
+}
+
+.textfield {
+  & label,
+  & input {
+    color: var(--text);
+  }
+
+  & fieldset {
+    border-color: var(--darkYellow);
+  }
+
+  &:hover fieldset,
+  &.Mui-focused fieldset {
+    border-color: var(--darkYellow)
+  }
+}
+
+.button {
+  margin-top: 2rem;
+  padding: 12px;
+  border-radius: 10px;
+  border: 2px solid var(--darkYellow);
+color: var(--darkestGrey);
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: var(--darkYellow);
+  width: 100%;
+}
+
+.button:hover{
+  border: 2px solid var(--text);
+  color: var(--text);
+cursor: pointer
+}
+
+.button:active {
+  background: none;
+}

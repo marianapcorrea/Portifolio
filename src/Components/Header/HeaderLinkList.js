@@ -13,14 +13,14 @@ function LinkList() {
         <AnchorLink href="#about">Sobre Mim</AnchorLink>
       </li>
       <li>
-        <AnchorLink href="#servces">Serviços</AnchorLink>
+        <AnchorLink href="#services">Serviços</AnchorLink>
       </li>
-      <li>
+      {/* <li>
         <AnchorLink href="#projects">Projetos</AnchorLink>
       </li>
       <li>
         <AnchorLink href="#skills">Conhecimentos</AnchorLink>
-      </li>
+      </li> */}
       <li>
         <AnchorLink href="#contact">Entre em Contato</AnchorLink>
       </li>

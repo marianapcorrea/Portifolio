@@ -2,27 +2,57 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 100px 50px 50px;
+    justify-content: center;
+    gap: 5rem
 }
 
 .aboutText {
     margin: 2.5rem;
+    width: 30%;
 }
 
 .aboutText h1 {
-    font-size: 1.75rem;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: var(--darkYellow);
 }
 
 .aboutText p {
     text-indent: 1.5em;
-    margin-top: 1rem;
+    margin-top: 0.75rem;
+}
+
+.imgContainer{
+  display: flex;
 }
 
 .imgContainer img {
     height: 25rem;
     width: auto;
     border-radius: 10px;
-    padding-left: 4rem;
+    position: absolute;
+    z-index: 10;
+    transform: rotate(0deg);
+}
+
+.imgContainer img:hover {
+  transform: rotate(15deg);
+}
+
+.imgContainer:before {
+  background-color: var(--darkYellow);
+  width: 26rem;
+  height: 26rem;
+  content: "";
+  display: flex;
+  position: relative;
+  transform: rotate(-8deg);
+  border-radius: 10px;
+
+}
+
+.imgContainer:hover {
+  transform: rotate(-10deg);
 }
 
 @media (max-width: 1020px) {

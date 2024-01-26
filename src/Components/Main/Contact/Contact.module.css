@@ -1,15 +1,21 @@
 .contact {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    padding: 12.5rem;
+    justify-content: space-around;
+}
+
+.info{
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 .imgContainer {
     width: 115px;
     height: 115px;
     border-radius: 50%;
-    border: 3px solid var(--text);
+    border: 3px solid var(--darkYellow);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,10 +36,14 @@
 .email h3 {
     font-size: 1.75rem;
     padding-top: 10px;
+  color: var(--darkYellow);
+
 }
 
 .email a {
     color: var(--text);
+  color: var(--darkYellow);
+
 }
 
 .socialMedia {

@@ -2,6 +2,7 @@ import React from 'react';
 import style from './Home.module.css';
 import SocialMediaList from '../GlobalComponents/SocialMediaList';
 import curriculo from '../../../Assets/cv/marianapcorrea_dev_fullstack.pdf';
+// import ParticlesComp from './Particle';
 // import homeBg from "../../../Assets/Home/home_bg.png";
 
 function Home() {
@@ -25,15 +26,12 @@ function Home() {
           <div className={ style.socialMedia }>
             <SocialMediaList />
           </div>
-          <a
-            href={ curriculo }
-            download
-          >
-            <button className={ style.button }>Currículo</button>
+          <a href={ curriculo } download>
+            <button className={ style.button }>Download currículo</button>
           </a>
-
         </section>
       </div>
+      <script src="tsparticles.engine.min.js" />
     </section>
   );
 }

@@ -8,19 +8,23 @@ function About() {
       <section className={ styles.aboutText }>
         <h1>Um pouco sobre mim...</h1>
         <p>
-          Olá, eu sou a Mariana, desenvolvedora front-end, e é um prazer ter você em meu
-          portifólio.
+          Olá, eu sou a Mariana, desenvolvedora full-stack, e é um prazer ter você em meu
+          portifólio!
         </p>
         <p>
           Atualmente, vivo em Belo Horizonte, Minas Gerais com minha parceira e nossos
           seis gatinhos.
         </p>
         <p>
-          Foi a minha parceira quem me apresentou o incrível mundo da tecnologia, onde me
-          apaixonei pela arte de fazer códigos e resolvi mudar da minha carreira em
-          Conservação e Restauração de Bens Culturais para me tornar desenvolvedora web.
+          Me formei como Restauradora de Bens Culturais Móveis pela Universidade Federal
+          de Minas Gerais, mas migrei para a área de desenvolvimento web em 2023.
         </p>
-
+        <p>
+          {' '}
+          Hoje atuo como desenvolvedora Full Stack, criando aplicações com React,
+          TypeScript e Node.js.
+          {' '}
+        </p>
       </section>
       <section className={ styles.imgContainer }>
         <img src={ photo } alt="Foto frontal de Mariana Corrêa" />

@@ -10,17 +10,19 @@ function Nav() {
 
   return (
     <div className={ styles.menuContainer }>
-      <div
+      <button
+        aria-label="Botão de alternância móvel"
         className={ styles.btnMobile }
         id={ active ? 'btnActive' : '' }
         onClick={ ToggleMode }
       />
-      <div
-        className={ active ? 'menu menuActive' : 'menu' }
+      <button
+        aria-label="Botão de alternância móvel"
+        className={ active ? `${styles.menu} ${styles.menuActive}` : styles.menu }
         onClick={ ToggleMode }
       >
         <HeaderLinkList />
-      </div>
+      </button>
     </div>
   );
 }

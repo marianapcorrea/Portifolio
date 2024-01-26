@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import styles from './SkillsTechSkills.module.css';
 import html from '../../../Assets/Skills/Html.svg';
@@ -22,7 +23,7 @@ function SkillsTechSkills() {
       CSS: 'icone CSS',
       name: 'CSS',
       description:
-      'CSS (Cascading Style Sheets) é uma linguagem de folhas de estilos, usadas para estilizar o conteúdo de uma página escrita com uma linguagem de programação.',
+        'CSS (Cascading Style Sheets) é uma linguagem de folhas de estilos, usadas para estilizar o conteúdo de uma página escrita com uma linguagem de programação.',
     },
     {
       id: 'iconJs',

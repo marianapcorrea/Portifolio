@@ -49,29 +49,6 @@
   gap: 1rem;
 }
 
-.socialMedia  {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-}
-
-.socialMedia  img{
-  width: 3rem;
-  height: auto;
-}
-
-.socialMedia a {
-  padding: 0.5rem
-}
-
-.socialMedia a:hover {
-  padding: 0.5rem;
-  border: 1px solid var(--darkYellow);
-  border-radius: 5px;
-}
-
 .button {
     padding: 12px;
     border-radius: 10px;

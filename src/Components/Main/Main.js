@@ -1,8 +1,8 @@
 import React from 'react';
 import Home from './Home/Home';
 import About from './About/About';
-import Projects from './Projects/Projects';
-import Skills from './Skills/Skills';
+// import Projects from './Projects/Projects';
+// import Skills from './Skills/Skills';
 import Contact from './Contact/Contact';
 import Services from './Services/Services';
 
@@ -12,8 +12,8 @@ function Main() {
       <Home />
       <About />
       <Services />
-      <Projects />
-      <Skills />
+      {/* <Projects />
+      <Skills /> */}
       <Contact />
     </main>
   );
